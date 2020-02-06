@@ -1,0 +1,92 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Rubik:300,400,500&display=swap');
+
+/* Fontawesome */
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+@import url('components/banner.css');
+
+@import url('components/card.css');
+
+@import url('components/button.css');
+
+/* Utilities */
+body {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  background-color: #e0e0e0;
+  color: #333333;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Rubik', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Custom design below! */
+
+.cards-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cards-container h2 {
+  text-align: center;
+  font-size: 32px;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+}
+
+.footer {
+  /* margin: 32px auto; */
+  text-align: center;
+  padding: 16px;
+}
+
+.list-inline {
+  padding: 0;
+}
+
+.list-inline > li {
+  display: inline-block;
+  margin: 24px;
+}
+
+.list-inline a {
+  color: #feb377;
+  font-size: 52px;
+}
+
+.list-inline a:hover {
+  color: #fa9d51;
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+  
+  .banner {
+    font-size: 20px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+  
+  .banner {
+    font-size: 16px;
+    height: 250px;
+  }
+}
+
