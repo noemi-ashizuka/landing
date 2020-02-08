@@ -29,19 +29,16 @@ a {
 /* Custom design below! */
 
 .cards-group {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin: 16px;
+  flex-grow: 1;
 }
 
 .cards-container h2 {
   text-align: center;
   font-size: 32px;
-}
-
-@media (max-width: 960px) {
-  .container {
-    width: 700px;
-  }
 }
 
 .footer {
@@ -68,6 +65,16 @@ a {
   color: #fa9d51;
 }
 
+@media (max-width: 960px) {
+  .container {
+    width: 700px;
+  }
+
+  .cards-group {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 720px) {
   .container {
     width: 500px;
@@ -76,6 +83,10 @@ a {
   .banner {
     font-size: 20px;
     height: 300px;
+  }
+
+  .cards-group {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -87,6 +98,10 @@ a {
   .banner {
     font-size: 16px;
     height: 250px;
+  }
+
+  .cards-group {
+    grid-template-columns: 1fr;
   }
 }
 
